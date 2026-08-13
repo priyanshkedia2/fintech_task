@@ -1,0 +1,1 @@
+function fmtDate(v){if(!v)return '';const a=String(v).slice(0,10).split('-');return a.length===3?`${a[2]}/${a[1]}/${a[0]}`:v;} function fmtNum(v){if(v===null||v===undefined||v==='')return '';const n=Number(v);return Number.isFinite(n)?n.toLocaleString('en-US',{maximumFractionDigits:2,useGrouping:false}):v;}
