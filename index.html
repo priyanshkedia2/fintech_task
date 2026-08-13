@@ -1,14 +1,1 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>PCR Strategy Dashboard</title>
-  <meta http-equiv="refresh" content="0; url=./pcr-dashboard/">
-  <script>window.location.replace('./pcr-dashboard/');</script>
-</head>
-<body>
-  <p>Opening PCR Strategy Dashboard…</p>
-  <p><a href="./pcr-dashboard/">Click here if you are not redirected automatically.</a></p>
-</body>
-</html>
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PCR Strategy Dashboard</title><style>body{margin:0;background:#080e1b;color:#edf2ff;font-family:Segoe UI,Arial}.head{padding:18px 22px 10px}.head h1{margin:0;font-size:24px}.sub{color:#9fb0cf;font-size:13px;margin-top:4px}.nav{display:flex;gap:8px;padding:0 22px 12px}.nav button{background:#121a2e;color:#9fb0cf;border:1px solid #273553;border-radius:9px;padding:9px 15px;cursor:pointer;font-weight:600}.nav button.active{background:#213252;color:#fff;border-color:#41649c}iframe{display:block;border:0;width:100%;height:calc(100vh - 104px);background:#0b1020}</style></head><body><div class="head"><h1>PCR Strategy Dashboard</h1><div class="sub">Performance • PCR Ranks • Individual Trade Logs</div></div><div class="nav"><button class="active" data-src="./pcr-dashboard/">Performance</button><button data-src="./pcr-dashboard/ranks.html">PCR Ranks</button><button data-src="./pcr-dashboard/trades.html">Trade Logs</button></div><iframe id="view" src="./pcr-dashboard/"></iframe><script>document.querySelectorAll('.nav button').forEach(b=>b.onclick=()=>{document.querySelectorAll('.nav button').forEach(x=>x.classList.remove('active'));b.classList.add('active');document.getElementById('view').src=b.dataset.src})</script></body></html>
